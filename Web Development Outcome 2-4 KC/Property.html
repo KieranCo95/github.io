@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet & Jack's B&B - Our Property</title>
+    <meta name="description" content="Our Charming B&B Property">
+    <meta name="author" content="Kieran Cooper">
+    <link rel="stylesheet" href="styles.css">
+      <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-y: auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        #image-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        #image-container:hover .main-image {
+            opacity: 0; 
+        }
+
+        #image-container:hover .hover-image {
+            opacity: 1; 
+        }
+
+        .main-image,
+        .hover-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .hover-image {
+            opacity: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Violet & Jack's B&B</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Property.html">Property</a></li>
+            <li><a href="GlasgowRoom.html">Glasgow Room</a></li>
+            <li><a href="EdinburghRoom.html">Edinburgh Room</a></li>
+            <li><a href="AberdeenRoom.html">Aberdeen Room</a></li>
+            <li><a href="DundeeRoom.html">Dundee Room</a></li>
+            <li><a href="Location-Contact.html">Location & Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="our-bb-property">
+        <h2>Our Charming B&B Property</h2>
+        <p>We will treat you like one of the family.</p>
+
+        <div id="image-container">
+            <img class="image main-image" src="Images/B&B1.png" alt="Exterior" width="300" height="200">
+            <img class="image hover-image" src="Images/B&B2.png" alt="Exterior alt view" width="300" height="200">
+        </div>
+
+        <p>Welcome to Violet & Jack's B&B, a lovingly restored Victorian-era retreat in Stromness. Our uniquely decorated rooms feature en-suite bathrooms, ensuring comfort and convenience. Enjoy complimentary Wi-Fi, inviting communal spaces, and a delightful garden. Experience genuine Orcadian hospitality for an unforgettable stay.</p>
+
+        <p>Check out our <a href="Documents/Price-list.pdf" target="_blank" download="PriceList.pdf">price list</a>.</p>
+
+        <button onclick="window.print()">Print this page</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Violet & Jack's B&B. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://static.app/js/static.js" type="text/javascript"></script>
+</body>
+
+</html>
